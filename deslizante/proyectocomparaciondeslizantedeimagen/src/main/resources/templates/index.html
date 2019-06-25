@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../..css/estilo.css"  th:href="@{/css/estilo.css}">   		
+        <script src="../../js/funcion.js" th:src="@{/js/funcion.js}"></script> 
+</head>
+<body>
+
+
+<p>Comparando dos imágenes:</p>
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="../../images/antigua.jpg" width="400" height="300" th:src="@{/images/antigua.jpg}">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="../../images/nueva.jpg" width="400" height="300" th:src="@{/images/nueva.jpg}">
+  </div>
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+</body>
+</html>
